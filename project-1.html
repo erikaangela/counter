@@ -28,42 +28,40 @@ Requirements:
     <div class='container-fluid text-center'>
       <div class='row'>
         <div class='col-sm-6'>
-          <button id='btn-1' onclick='increaseCounter()'>+</button>
+          <button id='btn-plus' onclick='increaseCounter()'>+</button>
         </div>
         <div class='col-sm-6'>
-          <button id='btn-2' onclick='decreaseCounter()'>-</button>
+          <button id='btn-minus' onclick='decreaseCounter()'>-</button>
         </div>
       </div>
     </div>
 
     <script>
-      let btnOne = document.getElementById('btn-1');
-      let btnOneCounter = 0;
+      let btnOne = document.getElementById('btn-plus');
+      let counter = 0;
       btnOne.addEventListener('click', function() {
-        btnOneCounter++;
-        document.getElementById('counter').innerText = btnOneCounter;
+        counter++;
+        document.getElementById('counter').innerText = counter;
       })
-      let btnTwo = document.getElementById('btn-2');
-      let btnTwoCounter = 0;
+      let btnTwo = document.getElementById('btn-minus');
       btnTwo.addEventListener('click', function() {
-        btnTwoCounter--;
-        document.getElementById('counter').innerText = btnTwoCounter;
+        counter--;
+        document.getElementById('counter').innerText = counter;
       })
 
-      document.getElementById('btn-1').style.background = 'green';
-      document.getElementById('btn-1').style.color = 'white';
+      const btnOneStyle = document.getElementById('btn-plus');
+      btnOneStyle.style.background = 'green';
+      btnOneStyle.style.color = 'white';
+      btnOneStyle.style.fontSize = '25px';
+      btnOneStyle.style.height = '50px';
+      btnOneStyle.style.width = '75px';
 
-      document.getElementById('btn-2').style.background = 'red';
-      document.getElementById('btn-2').style.color = 'white';
-
-      document.getElementById('btn-1').style.fontSize = '25px';
-      document.getElementById('btn-2').style.fontSize = '25px';
-
-      document.getElementById('btn-1').style.height = '50px';
-      document.getElementById('btn-2').style.height = '50px';
-
-      document.getElementById('btn-1').style.width = '75px';
-      document.getElementById('btn-2').style.width = '75px';
+      const btnTwoStyle = document.getElementById('btn-minus');
+      btnTwoStyle.style.background = 'red';
+      btnTwoStyle.style.color = 'white';
+      btnTwoStyle.style.fontSize = '25px';
+      btnTwoStyle.style.height = '50px';
+      btnTwoStyle.style.width = '75px';
 
 
 
