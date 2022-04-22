@@ -19,7 +19,7 @@ Requirements:
   </head>
 
   <body>
-    <div class='container-fluid text-center '>
+    <div class='container-fluid text-center'>
       <div class='row'>
         <p>Counter: <span id='counter'></span></p>
       </div>
@@ -39,12 +39,12 @@ Requirements:
     <script>
       let btnOne = document.getElementById('btn-plus');
       let counter = 0;
-      btnOne.addEventListener('click', function() {
+      btnOne.addEventListener('click', function increaseCounter() {
         counter++;
         document.getElementById('counter').innerText = counter;
       })
       let btnTwo = document.getElementById('btn-minus');
-      btnTwo.addEventListener('click', function() {
+      btnTwo.addEventListener('click', function decreaseCounter() {
         counter--;
         document.getElementById('counter').innerText = counter;
       })
